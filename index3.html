@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+    
+
+<section>
+
+<video autoplay muted loop id="myVideo">
+  <source src="video/videoplayback.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+    
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+          <h1>Welcome to <span style="color: rgb(182, 0, 0);">JESSO</span> WORLD <span style="color: rgb(182, 0, 0);">and</span> EVENT CENTER.</h1>
+          <h2>love at first sight. </h2>
+          <a href="#pricing" class="btn-get-started scrollto">Get Started</a>
+         
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</section>
+<section id="pricing" class="pricing">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
+          <div class="box featured">
+            <h2>Jesso Lagos Branch</h2>
+            <div class="kkk">
+      
+              <img src="img/back.jpg" alt="House" >
+            </div>
+            <h4><sup>we</sup>Welcome<span>you to </span></h4>
+                <ul>
+                  <li>The Most </li>
+                  <li>Safe And Reliable,</li>
+                  <li> Hotel and suites.</li>
+                </ul>
+            <div class="btn-wrap">
+                <a href="jessolagos.html" class="btn-buy">check out</a>
+            </div>
+          </div>
+    </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
+              <div class="box featured">
+                <h2>Jesso Benin Branch</h2>
+                <div class="kkk">
+      
+                  <img src="img/background.jpg" alt="House" >
+                </div>
+                <h4><sup>we</sup>Welcome<span>you to </span></h4>
+                    <ul>
+                      <li>The Most </li>
+                      <li>Safe And Reliable,</li>
+                      <li> Hotel & Event Center.</li>
+                    </ul>
+                <div class="btn-wrap">
+                    <a href="jessobenin.html" class="btn-buy">check out</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+          <div class="box">
+              <h3>Our Team</h3>
+              <h4><sup>Do</sup>you<span>want to</span></h4>
+                <ul>
+                  <li>check out.</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">contact us</a>
+                </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
